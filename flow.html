@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Reading Flow</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="flow.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<section class="flow-sec">
+    <h2>Reading Flow</h2>
+
+    <audio id="cozySound" loop>
+        <source src="assets/sounds/cozy.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="playSound()">Play Sound</button>
+    <button onclick="stopSound()">Stop Sound</button>
+
+    <h3>Completed Books</h3>
+    <input type="text" id="completedInput" placeholder="Enter completed book">
+    <button onclick="addCompleted()">Add</button>
+
+    <ul id="completedList"></ul>
+</section>
+
+<script src="main.js"></script>
+<script src="flow.js"></script>
+
+</body>
+</html>

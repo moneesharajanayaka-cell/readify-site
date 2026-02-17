@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Feedback</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="feedback.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<section class="feedback-sec">
+    <h2>Feedback</h2>
+
+    <input type="text" id="fbName" placeholder="Name">
+    <input type="email" id="fbEmail" placeholder="Email">
+    <textarea id="fbMsg" placeholder="Message"></textarea>
+
+    <button onclick="submitFeedback()">Submit</button>
+
+    <p id="fbConfirm"></p>
+
+    <h3>FAQ</h3>
+    <div class="accordion">
+        <h4 onclick="toggleFAQ(0)">How do I save progress?</h4>
+        <p class="faq-content">Your reading progress is automatically saved using browser storage.</p>
+
+        <h4 onclick="toggleFAQ(1)">Is Readify free?</h4>
+        <p class="faq-content">Yes! Everything is 100% free.</p>
+
+        <h4 onclick="toggleFAQ(2)">Can I recommend books?</h4>
+        <p class="faq-content">Yes! Use the feedback form.</p>
+    </div>
+</section>
+
+<script src="main.js"></script>
+<script src="feedback.js"></script>
+
+</body>
+</html>

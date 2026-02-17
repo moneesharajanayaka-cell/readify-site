@@ -1,0 +1,55 @@
+.recommend-box {
+    padding: 20px;
+}
+
+.result-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px black;
+}
+
+.result-card img {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    float: right;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+
+@keyframes fadeInPop {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.8) translateY(20px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); 
+    }
+}
+
+.result-card {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 2px solid #8ED0FF;
+    text-align: center;
+    
+    animation: fadeInPop 0.5s ease-out forwards;
+}
+
+.result-card img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.result-card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}

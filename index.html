@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+
+<nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to Readify</h1>
+        <p>Your personalized reading companion</p>
+        <p id="quoteText">“There is no friend as loyal as a book.” – Hemingway</p>
+        <button onclick="window.location.href='books.html'">Get Started</button>
+    </div>
+    <div class="hero-img-container">
+        <img src="assets/images/hero-main.jpg" class="hero-img" alt="Books Hero Image">
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature-card">
+        <img src="assets/icon-explore.png" alt="Explorer" class="feature-icon">
+        <h3>Book Explorer</h3>
+        <p>Discover thousands of titles and reviews.</p>
+    </div>
+    <div class="feature-card">
+        <img src="assets/icon-track.png" alt="Progress Tracker" class="feature-icon">
+        <h3>Progress Tracker</h3>
+        <p>Track your reading journey easily.</p>
+    </div>
+    <div class="feature-card">
+        <img src="assets/icon-recommend.png" alt="Recommender" class="feature-icon">
+        <h3>Smart Recommender</h3>
+        <p>Get personalized book suggestions.</p>
+    </div>
+</section>
+
+<section class="spotlight">
+    <h2>Popular Reads</h2>
+    <div class="books-row">
+        <div class="book-item">
+            <img src="assets/images/hp5.jpg" alt="Harry Potter">
+            <p>Harry Potter and the Order of the Phoenix</p>
+        </div>
+        <div class="book-item">
+            <img src="assets/images/hungergames.jpg" alt="The Hunger Games">
+            <p>The Hunger Games</p>
+        </div>
+        <div class="book-item">
+            <img src="assets/images/better.jpg" alt="Better Than the Movies">
+            <p>Better Than the Movies</p>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h3>Join our newsletter</h3>
+    <input type="email" id="newsletterEmail" placeholder="Enter email">
+    <button onclick="saveEmail()">Subscribe</button>
+    <p id="newsletterMsg"></p>
+</section>
+
+
+
+<section class="author-section">
+    <h2>Author of the Day</h2>
+    <p id="authorName"></p>
+</section>
+
+
+<footer>
+    <p>© 2020 Readify. All Rights Reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+<script src="data.js"></script> <script src="home.js"></script>
+
+
+</body>
+</html>

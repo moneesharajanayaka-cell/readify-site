@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Book Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<section class="search-area">
+    <input type="text" id="searchInput" placeholder="Search title or author...">
+    <select id="genreFilter">
+        <option value="all">All Genres</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Fiction">Fiction</option>
+    </select>
+</section>
+
+<div id="booksGrid" class="books-grid"></div>
+
+<div id="bookModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage">
+        <p id="modalDesc"></p>
+        <ul id="modalSequels"></ul>
+        <table id="modalReviews"></table>
+    </div>
+</div>
+
+<script src="data.js"></script>
+<script src="books.js"></script>
+
+</body>

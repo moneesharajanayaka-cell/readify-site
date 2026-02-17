@@ -1,0 +1,11 @@
+.flow-step {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px black;
+}
+
+.flow-step p {
+    margin-bottom: 10px;
+}

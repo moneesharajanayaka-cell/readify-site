@@ -1,0 +1,12 @@
+.feedback-box {
+    padding: 20px;
+}
+
+.feedback-success {
+    background: lightgreen;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: none;
+}

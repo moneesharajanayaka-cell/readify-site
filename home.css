@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: lightgoldenrodyellow;
+    color: grey;
+}
+
+
+.navbar {
+    background: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: 800;
+    color: darkslategrey;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: black;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.hamburger {
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    background: grey;
+    border-radius: 5px;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+#quoteText {
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px black;
+}
+
+.btn {
+    display: inline-block;
+    background: lightskyblue;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: black;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: lightskyblue;
+}
+
+
+.features {
+    margin: 50px auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px black;
+}
+
+.feature-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+
+.spotlight {
+    padding: 50px;
+    background: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.books-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book-item img {
+    width: 200px;         
+    height: 300px;        
+    object-fit: cover;    
+}
+
+.book-item p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+.author-section {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#authorName {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+
+.newsletter {
+    background: lightgoldenrodyellow;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.newsletter input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid lightgoldenrodyellow;
+    border-radius: 6px;
+}
+
+.newsletter button {
+    margin-top: 15px;
+    background: lightskyblue;
+    padding: 12px 30px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: lightskyblue;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: lightskyblue;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-img {
+        order: -1; 
+        margin-bottom: 20px;
+    }
+
+    .features,
+    .books-row {
+        grid-template-columns: 1fr; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        background: lightskyblue;
+        padding: 20px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        border-radius: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    
+    .newsletter input {
+        width: 90%;
+    }
+}
+

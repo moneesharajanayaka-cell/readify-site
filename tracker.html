@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify | Progress Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="tracker.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Readify</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Book Explorer</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<section class="tracker-sec">
+    <h2>Reading Progress</h2>
+    <input type="number" id="totalPages" placeholder="Total pages">
+    <input type="number" id="pagesRead" placeholder="Pages read">
+    <input type="number" id="readSpeed" placeholder="Pages per day">
+
+    <button onclick="calcProgress()">Calculate</button>
+
+    <p id="percent"></p>
+    <p id="finish"></p>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+</section>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="tracker.js"></script>
+
+</body>
+</html>
